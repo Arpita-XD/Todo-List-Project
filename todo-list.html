@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="todo-list.css">
+</head>
+
+<body>
+    <a href="login-todos.html"></a>
+    <nav>
+        <img class = "logo" src  = "https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft_To-Do_icon.png" width = "120" height = "70">
+        <h1 id="welcome-message"></h1>
+        <button id="logout-button" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="container">
+        <h1 class="heading">Todos</h1><br>
+        <div class="content">
+            <input type="text" id="todo-input" placeholder="Enter Your Todo">
+            <button class="add-btn" onclick="addTask()">Add Task</button>
+        </div>
+        <span id="error-message" class="error-message"></span>
+
+        <ul id="todo-taskList"></ul>
+    </div>
+    <script src="todo-list.js"></script>
+</body>
+</html>
